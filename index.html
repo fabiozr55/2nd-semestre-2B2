@@ -3,22 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style.css">    
 </head>
-<body> 
-<header>
-    <h1>hello,word!
-    <p>ficamos felizes com a <br>
-    sua visita!
-<p>
-<header>
-<section></section>    
-</body>
-</html>
-<title>site 1</title>
 <body>
-  <header>
-    <h1>ola mundo</h1>
-    <p>que bom te ver por aqui, <span idnomeusuario>fulano</span> <span> </p>
-  </header>
-  <section
+    <header>
+        <h1>Hello World</h1>
+        <p>Que bom te ver por aqui, <span id="nome-usuário">Fulano</span></p>
+    </header>
+
+    <section id="conteúdo">
+        <div>
+            <h2>
+            HTML
+            </h2>
+            <P>
+            <span class="texto-inglês">Hypertext Markup Language </span> <br>
+            (em português, Linguagem de Marcação de Hipertexto) <br>
+            estrutura a sua página web.
+            </P>
+
+            <h2>
+            CSS
+            </h2>
+
+            <P>
+            <span class="texto-inglês">Cascading Style Sheets </span> <br>
+            (em português, Folha de Estilo em Cascata)<br>
+            estiliza a sua página web
+            </P>
+        </div>
+	    <img src="imagem/Olá Mundo.png" alt="Imagem com figuras geométricas ao fundo e uma figura do planeta Terra a frente, com a inscrição Olá Mundo em letras coloridas">
+    </section>
+
+    <footer>
+        <p>Uma página desenvolvida durante estudos de Desenvolvimento WEB na plataforma Alura</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html><style>h2{
+    color:rgb(255, 166, 0);
+    font-size: 30px;
+}
+
+body{
+    background-color: #061883c5;
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 25px;
+}
+
+#conteúdo{
+   display: grid;
+   grid-auto-flow: column;
+   columns: auto;
+}
+
+header{
+    border-bottom: 1px solid grey;
+    background-image: url(imagem/World.jpg);
+}
+
+footer{
+    border-top: 1px solid grey;
+    background-color: rgba(86, 201, 227, 0.632);
+    text-align: center;
+    padding: 1px;
+}
+
+#nome-usuário{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.texto-inglês{
+    font-style: italic;
+}
+
+</style><men class="js">let nomeUsuário = "";
+let elemento = document.querySelector("#nome-usuário");
+
+while(nomeUsuário == ""){
+    nomeUsuário = prompt("Qual o seu nome?");
+}
+
+if(nomeUsuário == null){
+    elemento.textContent = 'seja muito bem-vindo.';
+}else{
+    elemento.textContent = nomeUsuário;
+}
+
+</men>
+
+
